@@ -1,0 +1,20 @@
+{
+  "name": "saucedemo-playwright-bdd",
+  "version": "1.0.0",
+  "description": "Playwright BDD with Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:login": "cucumber-js --tags \"@login\"",
+    "test:e2e": "cucumber-js --tags \"@e2e\"",
+    "test:report": "cucumber-js --format json:reports/cucumber-report.json && node report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.58.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.58.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
